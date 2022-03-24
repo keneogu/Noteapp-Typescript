@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "./components/Header";
 import { Notes } from "./models/note.models";
 import "./App.css";
 
@@ -11,9 +12,9 @@ function App() {
     date: (new Date).toString()
   }]);
   return (
-    <div className="App">
-      <h1>NoteApp</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
