@@ -8,13 +8,13 @@ interface INotesProps {
 
 const Notes: React.FunctionComponent<INotesProps> = ({note, handleDelete}) => {
 	return (
-		<div className="mb-3">
+		<div className="mb-5">
 			<Card style={{backgroundColor: note.color}}>
 				<Card.Body>
 					<Card.Title>{note.title}</Card.Title>
 					<Card.Text>{note.text}</Card.Text>
 					<Card.Subtitle>{note.title}</Card.Subtitle>
-					<Button className="mt-3" variant="danger" onClick={() => handleDelete(note.id)}> Danger </Button>
+					<Button className="mt-3" variant="danger" onClick={() => handleDelete(note.id)}> Delete </Button>
 				</Card.Body>
 			</Card>
 		</div>

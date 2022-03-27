@@ -18,7 +18,7 @@ const NotesList: React.FunctionComponent<INotesListProps> = ({notes, setNotes}) 
 	}
 	return (
 		<>
-			<h2 className="mt-3">Notes</h2>
+			<h2 className="mt-5">Notes</h2>
 			<div>{ renderNotes() }</div>
 		</>
 	);
