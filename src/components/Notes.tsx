@@ -6,10 +6,10 @@ interface INotesProps {
 	handleDelete: (id: string) => void
 }
 
-const Notes: React.FunctionComponent<INotesProps> = ({note, handleDelete}) => {
+const Notes: React.FunctionComponent<INotesProps> = ({ note, handleDelete }) => {
 	return (
 		<div className="mb-5">
-			<Card style={{backgroundColor: note.color}}>
+			<Card style={{ backgroundColor: note.color }}>
 				<Card.Body>
 					<Card.Title>{note.title}</Card.Title>
 					<Card.Text>{note.text}</Card.Text>

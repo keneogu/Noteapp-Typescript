@@ -5,15 +5,15 @@ interface IHeaderProps {
 }
 
 const Header: React.FunctionComponent<IHeaderProps> = (props) => {
-	return (
-		<Navbar fixed="top" bg="dark" variant="dark">
-    <Container>
-      <Navbar.Brand>
-      <h1>NoteApp</h1>
-      </Navbar.Brand>
-    </Container>
-  </Navbar>
-	);
+  return (
+    <Navbar fixed="top" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand>
+          <h1>NoteApp</h1>
+        </Navbar.Brand>
+      </Container>
+    </Navbar>
+  );
 };
 
 export default Header;
